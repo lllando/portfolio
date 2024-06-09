@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import Card from './Card';
 
 function App() {
+  // const terramentalInfo = [
+  //   "Released on Google Play Store for Android",
+  //   "Collaborated within a team of 5 people with the role of C# programmer",
+  //   "Presented the project at Barclays Games Frenzy 2023",
+  //   "Selected to receive funding from QHT trust to commercialize the project"
+  // ];
+
+  const terramentalDesc = "A 2D platformer where the player must harness the power of the elements to progress through levels. 5 person group project being worked on alongside university course with the aim of a publication deal and Steam release in 2023."
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="card-container">
+      <Card desc={terramentalDesc}/>
+      <Card desc={terramentalDesc}/>
+      <Card desc={terramentalDesc}/>
     </div>
   );
 }

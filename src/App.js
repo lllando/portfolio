@@ -10,11 +10,12 @@ function App() {
   //   "Selected to receive funding from QHT trust to commercialize the project"
   // ];
 
+  const terramentalTools = "Unity (2D) | C# | GitHub"
   const terramentalDesc = "A 2D platformer where the player must harness the power of the elements to progress through levels. 5 person group project being worked on alongside university course with the aim of a publication deal and Steam release in 2023."
 
   return (
     <div className="card-container">
-      <Card desc={terramentalDesc}/>
+      <Card tools={terramentalTools} desc={terramentalDesc}/>
       <Card desc={terramentalDesc}/>
       <Card desc={terramentalDesc}/>
     </div>

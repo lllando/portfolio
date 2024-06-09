@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import "./Card.css";
 
-const Card = ({ desc }) => {
+const Card = ({ tools, desc }) => {
   return (
     <div className="card">
       <div className="card-header">
         <h2>Terramental</h2>
-        <p>Unity (2D) | C# | GitHub</p>
+        <p>{tools}</p>
       </div>
       <div className="image-desc-container">
         <img

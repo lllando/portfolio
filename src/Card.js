@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Card.css";
 
-const Card = ({ tools, desc }) => {
+const Card = ({ tools, desc, imgurl }) => {
   return (
     <div className="card">
       <div className="card-header">
@@ -10,7 +10,7 @@ const Card = ({ tools, desc }) => {
       </div>
       <div className="image-desc-container">
         <img
-          src="/assets/pictures/terramental/terramental1.png"
+          src={imgurl}
           alt="terramental1"
           className="project-img"
         />
